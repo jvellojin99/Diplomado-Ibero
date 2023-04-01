@@ -55,7 +55,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="servidores.html">Servidores</a>
+                                    <a href="servicios.html">Servicios</a>
                                 </li>
 
                                 <li>
@@ -99,8 +99,8 @@
 
                         <div class="wrap-btn-slide1 animated visible-false" data-appear="zoomIn">
                             <!-- Button1 -->
-                            <a href="login.html" class="btn1 flex-c-m size1 txt3 trans-0-4">
-                                INICIO SESION
+                            <a href="registro_usuario.php" class="btn1 flex-c-m size1 txt3 trans-0-4">
+                                Registro Clientes
                             </a>
                         </div>
                     </div>
@@ -117,8 +117,6 @@
                             Servididores y Maquinas Virtuales
                         </span>
 
-                        
-
                         <div class="wrap-btn-slide1 animated visible-false" data-appear="slideInUp">
                             <!-- Button1 -->
                             <a href="login.html" class="btn1 flex-c-m size1 txt3 trans-0-4">
@@ -130,7 +128,7 @@
 
                 <div class="item-slick1 item3-slick1" style="background-image: url(images/contact.jpg);">
                     <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-                       
+
                         <h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37"
                             data-appear="rotateInUpRight">
                             Contáctenos
@@ -148,6 +146,46 @@
             <div class="wrap-slick1-dots"></div>
         </div>
 
+
+
+        <!-- Modal -->
+        <div id="miModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Contenido del modal -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Ingrese sus datos de Acceso</p>
+                    </div>
+                    <div>
+
+                        <div class="formulario">
+                            <form action="evaluar_sesion.php" method="post" autocomplete="OFF">
+                                <input type="text" placeholder="Documento" id="Documento_usuario"
+                                    name="Documento_usuario" required>
+                                <input type="password" placeholder="Password" id="Contrasena" name="Contrasena"
+                                    required>
+                            </form>
+                        </div>
+
+                        <div class="toggle">
+                            <span><a href="registro.php"> Crear Cuenta </a></span>
+                        </div>
+
+                        <div class="reset-password">
+                            <a href="#">Olvide mi Contraseña?</a>
+                        </div>
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success" data-dismiss="modal">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <!-- CONTENIDO -->
