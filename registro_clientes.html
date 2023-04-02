@@ -82,18 +82,6 @@
 		</div>
 	</header>
 
-
-
-	<!-- Title Page -->
-	<section>
-
-		<div class="item-slick1 item1-slick1" style="background-image: url(images/fondo-contacto.jpg);"></div>
-		<h2 class="tit6 t-center">
-
-		</h2>
-	</section>
-
-
 	<!-- Reservation -->
 	<section class="section-reservation bg1-pattern p-t-100 p-b-113">
 		<div class="container">
@@ -101,7 +89,7 @@
 				<div class="col-lg-12 p-b-30">
 					<div class="t-center">
 						<span class="tit2 t-center">
-							Formulario (solicitud de servicio)
+							Registro de Clientes
 						</span>
 
 						<h3 class="tit3 t-center m-b-35 m-t-2">
@@ -112,54 +100,39 @@
 					<form class="wrap-form-reservation size22 m-l-r-auto">
 						<div class="row">
 							<div class="col-md-4">
-								<!-- Date -->
+								<!-- Nombre -->
 								<span class="txt9">
-									Fecha deseada
+									Nombre Completo
 								</span>
 
-								<div class="wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="text" name="date">
-									<i class="btn-calendar fa fa-calendar ab-r-m hov-pointer m-r-18"
-										aria-hidden="true"></i>
+								<div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="name"
+										placeholder="Nombre Completo">
 								</div>
 							</div>
 
 							<div class="col-md-4">
-								<!-- Time -->
+								<!-- Documento -->
 								<span class="txt9">
-									Hora
+									Documento
 								</span>
 
-								<div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<!-- Select2 -->
-									<select class="selection-1" name="time">
-										<option>Seleccione la hora del servicio</option>
-										<option>8:00</option>
-										<option>10:00</option>
-										<option>12:00</option>
-										<option>14:00</option>
-										<option>18:00</option>
-									</select>
+								<div class="wrap-inputdocument size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="number" name="document"
+										placeholder="Documento">
 								</div>
 							</div>
 
 							<div class="col-md-4">
-								<!-- Time -->
+								<!-- Email -->
 								<span class="txt9">
-									Usuario que solicita
+									Email
 								</span>
 
-								<div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<!-- Select2 -->
-									<select class="selection-1" name="time">
-										<option>Seleccione una opción</option>
-										<option>8:00</option>
-										<option>10:00</option>
-										<option>12:00</option>
-										<option>14:30</option>
-										<option>18:00</option>
-									</select>
-								</div>
+								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="email" name="email"
+										placeholder="Email">
+								</div>	
 							</div>
 
 
@@ -168,48 +141,37 @@
 						<div class="row">
 
 							<div class="col-md-4">
-								<!-- People -->
+								<!-- Telefono -->
 								<span class="txt9">
-									Tipo
-								</span>
-
-								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<!-- Select2 -->
-									<select class="selection-1" name="people">
-										<option>Seleccione una opción</option>
-										<option>ECommers</option>
-										<option>Mantenimiento de servidores</option>
-										<option>Virtualizacion de servidores</option>
-										<option>Creación de copias de seguridad</option>
-										<option>Capacitaciones de servidores</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<!-- People -->
-								<span class="txt9">
-									Medio de Presentación
-								</span>
-
-								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<!-- Select2 -->
-									<select class="selection-1" name="people">
-										<option>Seleccione una opción</option>
-										<option>Virtual</option>
-										<option>Presencial</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<!-- Phone -->
-								<span class="txt9">
-									Observación
+									Telefono
 								</span>
 
 								<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="phone"
-										placeholder="Observación">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="number" name="phone"
+										placeholder="Telefono">
+								</div>
+							</div>
+							<div class="col-md-4">
+								<!-- Direccion -->
+								<span class="txt9">
+									Dirección
+								</span>
+
+								<div class="wrap-inputaddress size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="address"
+										placeholder="Dirección">
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<!-- Ciudad -->
+								<span class="txt9">
+									Ciudad
+								</span>
+
+								<div class="wrap-inputcity size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="city"
+										placeholder="Ciudad">
 								</div>
 							</div>
 
@@ -218,7 +180,7 @@
 						<div class="wrap-btn-booking flex-c-m m-t-6">
 							<!-- Button3 -->
 							<button type="submit" class="btn3 flex-c-m size13 txt11 trans-0-4">
-								AGENDAR
+								GUARDAR
 							</button>
 						</div>
 					</form>
