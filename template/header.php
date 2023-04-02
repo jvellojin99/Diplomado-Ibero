@@ -93,7 +93,7 @@
     <!-- Title Page -->
     <section>
 
-        <div class="item-slick1 item1-slick1" style="background-image: url(images/fondo-contacto.jpg);"></div>
+        <div class="item-slick1 item1-slick1" style="background-image: url(images/users.jpg);"></div>
     
     </section>
 
