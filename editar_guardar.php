@@ -1,5 +1,4 @@
 <?php
-    print_r($_POST);
     if(!isset($_POST['id_usuario'])){
         header('Location: registro_usuario.php?mensaje=error');
     }
@@ -12,9 +11,25 @@
     $phone = $_POST["txPhone"];
     $addres = $_POST["txtAddres"];
     $city = $_POST["txtCity"];
+    $state = $_POST["txtState"];
+    if($state == "on")
+    {
+        $valueState = 1;
+    }else 
+    {
+        $valueState = 0;
+    }
 
-    $sql = $bd->prepare("UPDATE usuario SET nombre = ?, documento = ?, telefono = ?, correo = ?, direccion = ?, ciudad = ? where id_usuario = ?;");
-    $response = $sql->execute([$name, $document, $phone, $mail, $addres, $city, $id]);
+    if(empty($name))
+    {
+        $sql = $bd->prepare("UPDATE usuario SET estado = ? where id_usuario = ?;");
+        $response = $sql->execute([1, $id]);
+    }else{
+        $sql = $bd->prepare("UPDATE usuario SET nombre = ?, telefono = ?, correo = ?, direccion = ?, ciudad = ?, estado = ? where id_usuario = ?;");
+        $response = $sql->execute([$name, $phone, $mail, $addres, $city, $valueState, $id]);
+    }
+
+    
 
     if ($response === TRUE) {
         header('Location: registro_usuario.php?mensaje=editado');

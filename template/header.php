@@ -10,6 +10,8 @@
     <!-- Bootstrap CSS v5.0.2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+
     <!-- cdn icnonos-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
@@ -41,6 +43,7 @@
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--===============================================================================================-->
+
 </head>
 
 <body class="animsition">
@@ -90,12 +93,3 @@
         </div>
     </header>
     <!-- CONTENIDO -->
-    <!-- Title Page -->
-    <section>
-
-        <div class="item-slick1 item1-slick1" style="background-image: url(images/users.jpg);"></div>
-    
-    </section>
-
-    <section class="section-reservation bg1-pattern p-t-1 p-b-180">
-        <div class="container">

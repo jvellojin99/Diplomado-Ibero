@@ -1,8 +1,5 @@
-</div>
-</section>
-<!-- CONTENIDO -->
 <!-- Footer -->
-<footer class="bg1 fixed-bottom">
+<footer class="bg1">
 
     <div class="container">
         <div class="flex-sb-m flex-w p-t-22 p-b-22">
@@ -71,11 +68,13 @@
 </script>
 <!--===============================================================================================-->
 <script type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>
+
 <!--===============================================================================================-->
 <script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
+<script type="text/javascript" src="js/state.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
 <!--===============================================================================================-->
 <script src="js/main.js"></script>
-
 </body>
 
 </html>
