@@ -1,5 +1,5 @@
 <?php 
-$contrasena = "root";
+$contrasena = "";
 $usuario = "root";
 $nombre_bd = "diplomado_ibero";
 
