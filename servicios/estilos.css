@@ -43,46 +43,58 @@ ul
 
 
 /* ALINEACION DE TABLAS */
-.pricing-wrap
-{
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-/* ALINEACION DE TABLAS */
-.pricing-table
-{
-
-	width: 32%;
-	transition: transform .5s ease;
-}
-
-.pricing-table:hover
-{
-	transform: scale(1.07);
-}
-
-.pricing-table-cont
-{
-	background:#fff;
+/* ALINEACIÓN DE TABLAS */
+.pricing-table {
+	background: #fff;
 	text-align: center;
-	position: relative; 
+	position: relative;
 	height: 500px;
-	-webkit-transform-style:preserve-3d;
-	transform-style: preserve-3d;
-}
-
-
-
+	-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+  }
+  
+  /* ESTILOS PARA PANTALLAS GRANDES */
+  @media (min-width: 992px) {
+	.pricing-wrap {
+	  display: flex;
+	  justify-content: space-between;
+	  flex-wrap: wrap;
+	}
+  
+	.pricing-table {
+	  width: 32%;
+	  transition: transform .5s ease;
+	}
+  
+	.pricing-table:hover {
+	  transform: scale(1.07);
+	}
+  }
+  
+  /* ESTILOS PARA PANTALLAS MEDIANAS */
+  @media (max-width: 991px) {
+	.pricing-wrap {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.pricing-table {
+	  width: 90%;
+	  margin-bottom: 40px;
+	}
+  
+	.pricing-table:last-child {
+	  margin-bottom: 0;
+	}
+  
+	.pricing-table:hover {
+	  transform: none;
+	}
+  }
 
 /* ALINEACION DE TABLAS */
-
-
-
 /* PARTE DELANTERA Y T6RASERA DE LAS TABLAS */
-
 .pricing-table-colombia, .pricing-table-argentina, .pricing-table-mexico
 {
 	-webkit-backface-visibility: hidden;

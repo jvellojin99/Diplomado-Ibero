@@ -5,26 +5,20 @@
 	<title>Contáctenos</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--===============================================================================================-->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-	<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.png" />
+	<!--CLASE INICIO SESION-->
+	<link rel="icon" type="image/png" href="images/logo.png" />
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-	<!--=======================================	========================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- Servicios-->
+	<link rel="stylesheet" href="servicios/estilos.css">
+	<script src="servicios/js/jquery-3.1.0.min.js"></script>
+	<!--CLASE INICIO SESION-->
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
 	<!--===============================================================================================-->
@@ -36,7 +30,6 @@
 </head>
 
 <body class="animsition">
-
 	<!-- Header -->
 	<header>
 		<!-- Header desktop -->
@@ -49,29 +42,23 @@
 							<img src="images/logo.png" alt="IMG-LOGO" data-logofixed="images/logo.png">
 						</a>
 					</div>
-
 					<!-- Menu -->
-                    <div class="wrap_menu p-l-45 p-l-0-xl">
-                        <nav class="menu">
-                            <ul class="main_menu">
-                                <li>
-                                    <a href="index.html">Home</a>
-                                </li>
+					<div class="wrap_menu p-l-45 p-l-0-xl">
+						<nav class="menu">
+							<ul class="main_menu">
+								<li>
+									<a href="index.html">Home</a>
+								</li>
+								<li>
+									<a href="servicios.html">Servicios</a>
 
-                                <li>
-                                    <a href="servicios.html">Servicios</a>
-
-                                </li>
-
-                                <li>
-                                    <a href="contactenos.php">Contáctenos</a>
-                                </li>
-
-
-                            </ul>
-                        </nav>
-                    </div>
-
+								</li>
+								<li>
+									<a href="contactenos.php">Contáctenos</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
 					<!-- Social -->
 					<div class="social flex-w flex-l-m p-r-20">
 						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -82,26 +69,153 @@
 			</div>
 		</div>
 	</header>
-
-
-
 	<!-- Title Page -->
-	<section>
-		<center><img src="images/working.jpg" width="1900" height="875"></center>
-		<h2 class="tit6 t-center">
-
-		</h2>
-	</section>
-
-
-	   <!-- CONTENIDO -->
-	   <section class="section-reservation bg1-pattern p-t-100 p-b-113">
-		<div class="container">
-			<H3> CONTENIDO DE LOS SERVICIOS EN CONSTRUCCION</H3>
+	<section class="section-slide">
+		<div class="wrap-slick1">
+			<div class="slick1">
+				<div class="item-slick1 item1-slick1" style="background-image: url(images/services.jpg);">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15"
+							data-appear="fadeInDown">
+						</span>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<!-- CONTENIDO -->
-
+	<section class="section-reservation bg1-pattern p-t-100 p-b-113">
+		<div class="container">
+			<div class="row mb-2">
+				<div class="col-md-6">
+					<div class="card flex-md-row mb-4 box-shadow h-md-250">
+						<div class="card-body d-flex flex-column align-items-start">
+							<strong class="d-inline-block mb-2 text-primary">Controladores de dominio Windows Server y
+								Linux</strong>
+							<h3 class="mb-0">
+								<a class="text-dark" href="#"></a>
+							</h3>
+							<p class="card-text mb-auto">Ofrecemos servicios profesionales de implementación y
+								administración de controladores de dominio para redes empresariales, utilizando tanto
+								Windows Server como Linux.</p>
+						</div>
+						<img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
+							alt="Thumbnail [200x250]"
+							src="images/computadores.jpg"
+							style="width: 300px; height: 250px;" src="" data-holder-rendered="true">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="card flex-md-row mb-4 box-shadow h-md-250">
+						<div class="card-body d-flex flex-column align-items-start">
+							<strong class="d-inline-block mb-2 text-primary">Seguridad informática con servidores
+								firewall (UTM)</strong>
+							<h3 class="mb-0">
+								<a class="text-dark" href="#"></a>
+							</h3>
+							<p class="card-text mb-auto">Ofrecemos servicios de seguridad informática utilizando
+								servidores firewall (UTM) para proteger su red empresarial contra amenazas cibernéticas
+								y asegurar que sus datos y sistemas críticos estén seguros.</p>
+						</div>
+						<img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
+							alt="Thumbnail [200x250]"
+							src="images/seguridad.jpg"
+							data-holder-rendered="true" style="width: 300px; height: 250px;">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="card flex-md-row mb-4 box-shadow h-md-250">
+						<div class="card-body d-flex flex-column align-items-start">
+							<strong class="d-inline-block mb-2 text-primary">Virtualizacion de servidores</strong>
+							<h3 class="mb-0">
+								<a class="text-dark" href="#"></a>
+							</h3>
+							<p class="card-text mb-auto">Ofrecemos servicios profesionales de virtualización de
+								servidores para ayudar a las empresas a aprovechar al máximo sus recursos de TI y
+								reducir costos.</p>
+						</div>
+						<img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
+							alt="Thumbnail [200x250]"
+							src="images/servidores.jpg"
+							style="width: 300px; height: 250px;" src="" data-holder-rendered="true">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="card flex-md-row mb-4 box-shadow h-md-250">
+						<div class="card-body d-flex flex-column align-items-start">
+							<strong class="d-inline-block mb-2 text-primary">Redes VPN y Conexiones remotas</strong>
+							<h3 class="mb-0">
+								<a class="text-dark" href="#"></a>
+							</h3>
+							<p class="card-text mb-auto">Ofrecemos servicios profesionales de implementación y
+								configuración de redes VPN y conexiones remotas para que su empresa pueda trabajar de
+								forma segura y eficiente desde cualquier lugar del mundo.</p>
+						</div>
+						<img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
+							alt="Thumbnail [200x250]"
+							src="images/redes.jpg"
+							data-holder-rendered="true" style="width: 300px; height: 250px;">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="card flex-md-row mb-4 box-shadow h-md-250">
+						<div class="card-body d-flex flex-column align-items-start">
+							<strong class="d-inline-block mb-2 text-primary">Configuración de servidores en Clúster de
+								Alta Disponibilidad
+							</strong>
+							<h3 class="mb-0">
+								<a class="text-dark" href="#"></a>
+							</h3>
+							<p class="card-text mb-auto">Ofrecemos servicios profesionales de configuración de
+								servidores en clúster de alta disponibilidad para garantizar que su empresa tenga la
+								máxima disponibilidad y redundancia en sus sistemas críticos.</p>
+						</div>
+						<img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
+							alt="Thumbnail [200x250]"
+							src="images/cluster.jpg"
+							style="width: 300px; height: 250px;" src="" data-holder-rendered="true">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="card flex-md-row mb-4 box-shadow h-md-250">
+						<div class="card-body d-flex flex-column align-items-start">
+							<strong class="d-inline-block mb-2 text-primary">Soluciones de copias de seguridad</strong>
+							<h3 class="mb-0">
+								<a class="text-dark" href="#"></a>
+							</h3>
+							<p class="card-text mb-auto">Ofrecemos servicios profesionales de soluciones de copias de
+								seguridad para ayudar a proteger los datos críticos de su empresa y asegurarnos de que
+								estén disponibles en caso de una pérdida de datos o una interrupción del sistema.</p>
+						</div>
+						<img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
+							alt="Thumbnail [200x250]"
+							src="images/backup.jpg"
+							data-holder-rendered="true" style="width: 300px; height: 250px;">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="card flex-md-row mb-4 box-shadow h-md-250">
+						<div class="card-body d-flex flex-column align-items-start">
+							<strong class="d-inline-block mb-2 text-primary">Sincronización de archivos y almacenamiento
+								en la nube
+							</strong>
+							<h3 class="mb-0">
+								<a class="text-dark" href="#"></a>
+							</h3>
+							<p class="card-text mb-auto">Ofrecemos servicios profesionales de sincronización de archivos
+								y almacenamiento en la nube para ayudar a su empresa a mantenerse organizada, productiva
+								y segura.</p>
+						</div>
+						<img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
+							alt="Thumbnail [200x250]"
+							src="images/almacenamiento.jpg"
+							data-holder-rendered="true" style="width: 300px; height: 250px;">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- CONTENIDO -->
 
 	<!-- Footer -->
 	<footer class="bg1">

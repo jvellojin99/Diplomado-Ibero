@@ -4,7 +4,7 @@
 <!-- Title Page -->
 <section>
 
-	<div class="item-slick1 item1-slick1" style="background-image: url(images/fondo-contacto.jpg);"></div>
+	<div class="item-slick1 item1-slick1" style="background-image: url(images/contacto.jpg);"></div>
 	<h2 class="tit6 t-center">
 
 	</h2>
@@ -173,9 +173,9 @@
 
 
 
-				<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+				<!-- <div class="d-grid gap-2 d-md-flex justify-content-md-end">
 					<button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#myModal">Buscar Usuarios</button>
-				</div>
+				</div> -->
 
 				<form class="wrap-form-reservation size22 m-l-r-auto" method="POST" action="registrar.php">
 					<div class="row">
@@ -254,11 +254,14 @@
 
 					</div>
 
-					<div class="wrap-btn-booking flex-c-m m-t-6">
+					<div class="wrap-btn-booking d-flex justify-content-between">
 						<input type="hidden" name="oculto" value="1">
 						<!-- Button3 -->
 						<button type="submit" class="btn3 flex-c-m size13 txt11 trans-0-4">
 							GUARDAR
+						</button>
+						<button type="button" class="btn3 flex-c-m size13 txt11 trans-0-4" data-toggle="modal" data-target="#myModal">
+							Buscar Usuarios
 						</button>
 					</div>
 				</form>

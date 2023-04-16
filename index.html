@@ -5,23 +5,16 @@
     <title>Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!--CLASE INICIO SESION-->
-
     <link rel="icon" type="image/png" href="images/logo.png" />
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-
     <!-- Servicios-->
-	<link rel="stylesheet" href="servicios/estilos.css">
-	<script src="servicios/js/jquery-3.1.0.min.js"></script>
-
-
-
+    <link rel="stylesheet" href="servicios/estilos.css">
+    <script src="servicios/js/jquery-3.1.0.min.js"></script>
     <!--CLASE INICIO SESION-->
-
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
     <!--===============================================================================================-->
@@ -37,20 +30,18 @@
 </head>
 
 <body class="animsition">
-
     <!-- Header -->
     <header>
         <!-- Header desktop -->
         <div class="wrap-menu-header gradient1 trans-0-4">
-            <div class="container h-full">
-                <div class="wrap_header trans-0-3">
+            <div class="container full">
+                <div class="wrap_header">
                     <!-- Logo -->
                     <div class="logo">
                         <a href="index.html">
-                            <img src="images/logo.png" alt="IMG-LOGO" data-logofixed="images/logo.png">
+                            <img src="images/logo.png" alt="IMG-LOGO" data-logofixed="images/logo.png" class="logo-img">
                         </a>
                     </div>
-
                     <!-- Menu -->
                     <div class="wrap_menu p-l-45 p-l-0-xl">
                         <nav class="menu">
@@ -58,20 +49,15 @@
                                 <li>
                                     <a href="index.html">Home</a>
                                 </li>
-
                                 <li>
                                     <a href="servicios.html">Servicios</a>
                                 </li>
-
                                 <li>
                                     <a href="contactenos.php">Contáctenos</a>
                                 </li>
-
-
                             </ul>
                         </nav>
                     </div>
-
                     <!-- Social -->
                     <div class="social flex-w flex-l-m p-r-20">
                         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -82,13 +68,9 @@
             </div>
         </div>
     </header>
-
     <!-- Sidebar -->
-
-
     <!-- Slide1 -->
     <section class="section-slide">
-
         <div class="wrap-slick1">
             <div class="slick1">
                 <div class="item-slick1 item1-slick1" style="background-image: url(images/laptop.jpg);">
@@ -97,11 +79,9 @@
                             data-appear="fadeInDown">
                             Bienvenido a
                         </span>
-
                         <h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
                             TECH CELL
                         </h2>
-
                         <div class="wrap-btn-slide1 animated visible-false" data-appear="zoomIn">
                             <!-- Button1 -->
                             <a href="registro_usuario.php" class="btn1 flex-c-m size1 txt3 trans-0-4">
@@ -110,18 +90,15 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="item-slick1 item2-slick1" style="background-image: url(images/working.jpg);">
-                    <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-
-                        <h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37"
-                            data-appear="lightSpeedIn">
-                            Instalación y Configuracíon de
-                        </h2>
+                    <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-100 p-b-170">
                         <span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="rollIn">
+                            <br>
+                            <br>
+                            <br>
+                            Instalación y Configuracíon de
                             Servididores y Maquinas Virtuales
                         </span>
-
                         <div class="wrap-btn-slide1 animated visible-false" data-appear="slideInUp">
                             <!-- Button1 -->
                             <a href="login.html" class="btn1 flex-c-m size1 txt3 trans-0-4">
@@ -130,15 +107,12 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="item-slick1 item3-slick1" style="background-image: url(images/contact.jpg);">
                     <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-
                         <h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37"
                             data-appear="rotateInUpRight">
                             Contáctenos
                         </h2>
-
                         <div class="wrap-btn-slide1 animated visible-false" data-appear="rotateIn">
                             <!-- Button1 -->
                             <a href="login.html" class="btn1 flex-c-m size1 txt3 trans-0-4">
@@ -150,9 +124,6 @@
             </div>
             <div class="wrap-slick1-dots"></div>
         </div>
-
-
-
         <!-- Modal -->
         <div id="miModal" class="modal fade" role="dialog">
             <div class="modal-dialog">
@@ -165,7 +136,6 @@
                         <p>Ingrese sus datos de Acceso</p>
                     </div>
                     <div>
-
                         <div class="formulario">
                             <form action="evaluar_sesion.php" method="post" autocomplete="OFF">
                                 <input type="text" placeholder="Documento" id="Documento_usuario"
@@ -174,218 +144,166 @@
                                     required>
                             </form>
                         </div>
-
                         <div class="toggle">
                             <span><a href="registro.php"> Crear Cuenta </a></span>
                         </div>
-
                         <div class="reset-password">
                             <a href="#">Olvide mi Contraseña?</a>
                         </div>
                     </div>
-
-
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-success" data-dismiss="modal">Ingresar</button>
                     </div>
                 </div>
             </div>
         </div>
-
-
-        <!-- CONTENIDO -->
-        <section class="section-reservation bg1-pattern p-t-100 p-b-113">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 p-b-30">
-                        <div class="t-center">
-                            <span class="tit2 t-center">
-                                Servicios
-                            </span>
-
-                            <h3 class="tit3 t-center m-b-35 m-t-2">
-                                TECH CELL
-                            </h3>
-
-                            <h2 class="letra t-center">
-                                Seleccione el Servicio
-                            </h2>
-                        </div>
-
-                        <!--- SERVICIOS-->
-
-                        <div class="wrap">
-
-                            <div class="pricing-wrap">
-
-                                <div class="pricing-table">
-                                    <div class="pricing-table-cont">
-
-                                        <!-- Servidores-->
-                                        <div class="pricing-table-colombia">
-                                            <div class="pricing-table-head estandar-title1">
-                                                <h2>Servidores</h2>
-
-                                            </div>
-                                            <ul class="pricing-table-list">
-
-                                                <img src="images/servidor.jpg" width="150px" height="110px">
-                                                <li><span>Encontraras diversos servicios como lo son la 
+    </section>
+    <!-- CONTENIDO -->
+    <section class="section-reservation bg1-pattern p-t-100 p-b-113">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 p-b-30">
+                    <div class="text-center">
+                        <h2 class="tit2">Servicios</h2>
+                        <h3 class="tit3 mb-3">TECH CELL</h3>
+                        <h4 class="letra mb-5">Seleccione el Servicio</h4>
+                    </div>
+                    <!--- SERVICIOS-->
+                    <div class="container">
+                        <div class="pricing-wrap">
+                            <div class="pricing-table">
+                                <div class="pricing-table-cont">
+                                    <!-- Servidores-->
+                                    <div class="pricing-table-colombia">
+                                        <div class="pricing-table-head estandar-title1">
+                                            <h2>Servidores</h2>
+                                        </div>
+                                        <ul class="pricing-table-list">
+                                            <img src="images/servidor.jpg" width="150px" height="110px">
+                                            <li><span>Encontraras diversos servicios como lo son la
                                                     virtualizacion de servidores, soluciones de copias de seguridad,
-                                                    ademas de manejar controladores y dominios que permitan a la redes y conexiones trabajar bajo dominios.
-
-
-                                                    
+                                                    ademas de manejar controladores y dominios que permitan a la
+                                                    redes y conexiones trabajar bajo dominios.
                                                 </span></li>
-
-
-                                            </ul>
-                                            <a href="servicios.html" class="pricing-table-button estandar3">Ver información</a>
+                                        </ul>
+                                        <a href="servicios.html" class="pricing-table-button estandar3">Ver
+                                            información</a>
+                                    </div>
+                                    <!-- Servidores-->
+                                </div>
+                            </div>
+                            <div class="pricing-table">
+                                <div class="pricing-table-cont">
+                                    <!-- Aplicaciones-->
+                                    <div class="pricing-table-colombia">
+                                        <div class="pricing-table-head estandar-title3">
+                                            <h2>Aplicaciones</h2>
                                         </div>
-                                        <!-- Servidores-->
-
+                                        <ul class="pricing-table-list">
+                                            <img src="images/app.jpg" width="150px" height="110px">
+                                            <li><span> Para estos servicios, se ofrece la instalacion y configuarion
+                                                    de aplicaciones
+                                                    dentro de un sistema information que se este implementando desde
+                                                    cero, dando la capacidad de entendimiento sobre la aplicacion.
+                                                </span></li>
+                                        </ul>
+                                        <a href="servicios.html" class="pricing-table-button estandar3">Ver
+                                            información</a>
                                     </div>
                                 </div>
-                                <div class="pricing-table">
-                                    <div class="pricing-table-cont">
-
-                                        <!-- Aplicaciones-->
-                                        <div class="pricing-table-colombia">
-                                            <div class="pricing-table-head estandar-title3">
-                                                <h2>Aplicaciones</h2>
-
-                                            </div>
-                                            <ul class="pricing-table-list">
-
-                                                <img src="images/app.jpg" width="150px" height="110px">
-                                                <li><span> Para estos servicios, se ofrece la instalacion  y configuarion de aplicaciones 
-                                                    dentro de un sistema information que se este implementando desde cero, dando la capacidad de entendimiento sobre la aplicacion.
-                                                </span></li>
-
-                                            </ul>
-                                            <a href="servicios.html" class="pricing-table-button estandar3">Ver información</a>
+                            </div>
+                            <div class="pricing-table">
+                                <div class="pricing-table-cont">
+                                    <!-- Soporte-->
+                                    <div class="pricing-table-colombia">
+                                        <div class="pricing-table-head estandar-title3">
+                                            <h2>Soporte</h2>
                                         </div>
-
-                                    </div>
-                                </div>
-                                <div class="pricing-table">
-                                    <div class="pricing-table-cont">
-
-                                        <!-- Soporte-->
-                                        <div class="pricing-table-colombia">
-                                            <div class="pricing-table-head estandar-title3">
-                                                <h2>Soporte</h2>
-
-                                            </div>
-                                            <ul class="pricing-table-list">
-
-                                                <img src="images/soporte.jpg" width="150px" height="110px">
-                                                <li><span> Se ofrece distintos tipos de soportes, ya sean para servidores, aplicaciones, copias de seguridad,
-                                                    virtualización de servidores, seguridad informatica y conexiones a redes VPN y conexiones remotas.
-                                                     </span>
-                                                </li>
-
-                                            </ul>
-                                            <a href="servicios.html" class="pricing-table-button estandar3">Ver información</a>
-                                        </div>
-
+                                        <ul class="pricing-table-list">
+                                            <img src="images/soporte.jpg" width="150px" height="110px">
+                                            <li><span> Se ofrece distintos tipos de soportes, ya sean para
+                                                    servidores, aplicaciones, copias de seguridad,
+                                                    virtualización de servidores, seguridad informatica y conexiones
+                                                    a redes VPN y conexiones remotas.
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <a href="servicios.html" class="pricing-table-button estandar3">Ver
+                                            información</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
-
-
-                        <!--- CATEGORIAS-->
-
-
                     </div>
-                </div>
-
-
-            </div>
-        </section>
-        <!-- CONTENIDO -->
-
-
-
-
-
-        <!-- Footer -->
-        <footer class="bg1">
-
-            <div class="end-footer bg2">
-                <div class="container">
-                    <div class="flex-sb-m flex-w p-t-22 p-b-22">
-                        <div class="p-t-5 p-b-5">
-                            <a href="#" class="fs-15 c-white"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
-                            <a href="#" class="fs-15 c-white"><i class="fa fa-facebook m-l-18"
-                                    aria-hidden="true"></i></a>
-                            <a href="#" class="fs-15 c-white"><i class="fa fa-twitter m-l-18"
-                                    aria-hidden="true"></i></a>
-
-
-                            <ul>
-                                <li class="txt14 m-b-14">
-                                    <i class="fa fa-map-marker fs-16 dis-inline-block size19" aria-hidden="true"></i>
-                                    Bogota DC
-                                </li>
-
-                                <li class="txt14 m-b-14">
-                                    <i class="fa fa-phone fs-16 dis-inline-block size19" aria-hidden="true"></i>
-                                    (+601) 746 68 76
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="txt17 p-r-20 p-t-5 p-b-5">
-                            <p align="right">Copyright &copy; 2023 All rights reserved <i class="fa fa-heart"></i> by <a
-                                    href="https://www.ibero.edu.co/" target="_blank">Ibero</a>
-                            </p>
-                            <p align="right"><span class="txt14 m-b-14"> <i
-                                        class="fa fa-envelope fs-13 dis-inline-block size19" aria-hidden="true"></i>
-                                    servicioalestudiante@ibero.edu.co </span></p>
-                        </div>
-                    </div>
+                    <!--- CATEGORIAS-->
                 </div>
             </div>
-        </footer>
-
-        <!-- Back to top -->
-        <div class="btn-back-to-top bg0-hov" id="myBtn">
-            <span class="symbol-btn-back-to-top">
-                <i class="fa fa-angle-double-up" aria-hidden="true"></i>
-            </span>
         </div>
-
-
-        <!--===============================================================================================-->
-        <script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
-        <!--===============================================================================================-->
-        <script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
-        <!--===============================================================================================-->
-        <script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
-        <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
-        <!--===============================================================================================-->
-        <script type="text/javascript" src="vendor/select2/select2.min.js"></script>
-        <!--===============================================================================================-->
-        <script type="text/javascript" src="vendor/daterangepicker/moment.min.js"></script>
-        <script type="text/javascript" src="vendor/daterangepicker/daterangepicker.js"></script>
-        <!--===============================================================================================-->
-        <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
-        <script type="text/javascript" src="js/slick-custom.js"></script>
-        <!--===============================================================================================-->
-        <script type="text/javascript" src="vendor/parallax100/parallax100.js"></script>
-        <script type="text/javascript">
-            $('.parallax100').parallax100();
-        </script>
-        <!--===============================================================================================-->
-        <script type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>
-        <!--===============================================================================================-->
-        <script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
-        <!--===============================================================================================-->
-        <script src="js/main.js"></script>
+    </section>
+    <!-- Footer -->
+    <footer class="bg1">
+        <div class="end-footer bg2">
+            <div class="container">
+                <div class="flex-sb-m flex-w p-t-22 p-b-22">
+                    <div class="p-t-5 p-b-5">
+                        <a href="#" class="fs-15 c-white"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+                        <a href="#" class="fs-15 c-white"><i class="fa fa-facebook m-l-18" aria-hidden="true"></i></a>
+                        <a href="#" class="fs-15 c-white"><i class="fa fa-twitter m-l-18" aria-hidden="true"></i></a>
+                        <ul>
+                            <li class="txt14 m-b-14">
+                                <i class="fa fa-map-marker fs-16 dis-inline-block size19" aria-hidden="true"></i>
+                                Bogota DC
+                            </li>
+                            <li class="txt14 m-b-14">
+                                <i class="fa fa-phone fs-16 dis-inline-block size19" aria-hidden="true"></i>
+                                (+601) 746 68 76
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="txt17 p-r-20 p-t-5 p-b-5">
+                        <p align="right">Copyright &copy; 2023 All rights reserved <i class="fa fa-heart"></i> by <a
+                                href="https://www.ibero.edu.co/" target="_blank">Ibero</a>
+                        </p>
+                        <p align="right"><span class="txt14 m-b-14"> <i
+                                    class="fa fa-envelope fs-13 dis-inline-block size19" aria-hidden="true"></i>
+                                servicioalestudiante@ibero.edu.co </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Back to top -->
+    <div class="btn-back-to-top bg0-hov" id="myBtn">
+        <span class="symbol-btn-back-to-top">
+            <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+        </span>
+    </div>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/daterangepicker/moment.min.js"></script>
+    <script type="text/javascript" src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick-custom.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/parallax100/parallax100.js"></script>
+    <script type="text/javascript">
+        $('.parallax100').parallax100();
+    </script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
