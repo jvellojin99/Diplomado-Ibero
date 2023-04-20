@@ -261,7 +261,7 @@
 							GUARDAR
 						</button>
 						<button type="button" class="btn3 flex-c-m size13 txt11 trans-0-4" data-toggle="modal" data-target="#myModal">
-							Buscar Usuarios
+							BUSCAR USUARIOS
 						</button>
 					</div>
 				</form>

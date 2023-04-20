@@ -26,7 +26,169 @@
 					</h3>
 				</div>
 
-				<form class="wrap-form-reservation size22 m-l-r-auto">
+
+				<!-- inicio alerta -->
+				<?php
+				if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'vacio') {
+				?>
+					<div class="alert alert-warning alert-dismissible fade show" role="alert">
+						<strong>Error!</strong> Rellena todos los campos.
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+
+					<script>
+						window.setTimeout(function() {
+							$(".alert").fadeTo(500, 0).slideUp(500, function() {
+								$(this).remove();
+							});
+						}, 5000);
+					</script>
+				<?php
+				}
+				?>
+
+				<?php
+				if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'userNotFound') {
+				?>
+					<div class="alert alert-warning alert-dismissible fade show" role="alert">
+						<strong>Error!</strong> Usuario no encontrado. Por favor realice el registro en el sistema
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+
+					<script>
+						window.setTimeout(function() {
+							$(".alert").fadeTo(500, 0).slideUp(500, function() {
+								$(this).remove();
+							});
+						}, 5000);
+					</script>
+				<?php
+				}
+				?>
+
+				<?php
+				if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'foundService') {
+				?>
+					<div class="alert alert-warning alert-dismissible fade show" role="alert">
+						<strong>Error!</strong> Usuario ya se encuentra con un servicio registrado.
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+
+					<script>
+						window.setTimeout(function() {
+							$(".alert").fadeTo(500, 0).slideUp(500, function() {
+								$(this).remove();
+							});
+						}, 5000);
+					</script>
+				<?php
+				}
+				?>
+
+				<?php
+				if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'passwordIncorrect') {
+				?>
+					<div class="alert alert-warning alert-dismissible fade show" role="alert">
+						<strong>Error!</strong> Contraseña Incorrecta
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+
+					<script>
+						window.setTimeout(function() {
+							$(".alert").fadeTo(500, 0).slideUp(500, function() {
+								$(this).remove();
+							});
+						}, 5000);
+					</script>
+				<?php
+				}
+				?>
+
+
+				<?php
+				if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'registrado') {
+				?>
+					<div class="alert alert-success alert-dismissible fade show" role="alert">
+						<strong>Registrado!</strong> Se agregaron los datos.
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+
+					<script>
+						window.setTimeout(function() {
+							$(".alert").fadeTo(500, 0).slideUp(500, function() {
+								$(this).remove();
+							});
+						}, 5000);
+					</script>
+				<?php
+				}
+				?>
+
+
+
+				<?php
+				if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'error') {
+				?>
+					<div class="alert alert-danger alert-dismissible fade show" role="alert">
+						<strong>Error!</strong> Vuelve a intentar.
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+
+					<script>
+						window.setTimeout(function() {
+							$(".alert").fadeTo(500, 0).slideUp(500, function() {
+								$(this).remove();
+							});
+						}, 5000);
+					</script>
+				<?php
+				}
+				?>
+
+
+
+				<?php
+				if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'editado') {
+				?>
+					<div class="alert alert-success alert-dismissible fade show" role="alert">
+						<strong>Cambiado!</strong> Los datos fueron actualizados.
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+
+					<script>
+						window.setTimeout(function() {
+							$(".alert").fadeTo(500, 0).slideUp(500, function() {
+								$(this).remove();
+							});
+						}, 5000);
+					</script>
+				<?php
+				}
+				?>
+
+
+				<?php
+				if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'eliminado') {
+				?>
+					<div class="alert alert-warning alert-dismissible fade show" role="alert">
+						<strong>Eliminado!</strong> Los datos fueron borrados.
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+
+					<script>
+						window.setTimeout(function() {
+							$(".alert").fadeTo(500, 0).slideUp(500, function() {
+								$(this).remove();
+							});
+						}, 5000);
+					</script>
+				<?php
+				}
+				?>
+
+				<!-- fin alerta -->
+
+				<form class="wrap-form-reservation size22 m-l-r-auto" method="POST" action="registrar_servicio.php">
 					<div class="row">
 						<div class="col-md-4">
 							<!-- Date -->
@@ -35,8 +197,7 @@
 							</span>
 
 							<div class="wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23">
-								<input class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="text" name="date">
-								<i class="btn-calendar fa fa-calendar ab-r-m hov-pointer m-r-18" aria-hidden="true"></i>
+								<input class="bo-rad-10 sizefull txt10 p-l-20" type="date" name="date">
 							</div>
 						</div>
 
@@ -62,19 +223,11 @@
 						<div class="col-md-4">
 							<!-- Time -->
 							<span class="txt9">
-								Usuario que solicita
+								Documento del solicitante
 							</span>
 
-							<div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23">
-								<!-- Select2 -->
-								<select class="selection-1" name="time">
-									<option>Seleccione una opción</option>
-									<option>8:00</option>
-									<option>10:00</option>
-									<option>12:00</option>
-									<option>14:30</option>
-									<option>18:00</option>
-								</select>
+							<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
+								<input class="bo-rad-10 sizefull txt10 p-l-20" type="number" name="document" placeholder="Numero Documento" autocomplete="off">
 							</div>
 						</div>
 
@@ -91,7 +244,7 @@
 
 							<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
 								<!-- Select2 -->
-								<select class="selection-1" name="people">
+								<select class="selection-1" name="type">
 									<option>Seleccione una opción</option>
 									<option>ECommers</option>
 									<option>Mantenimiento de servidores</option>
@@ -109,7 +262,7 @@
 
 							<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
 								<!-- Select2 -->
-								<select class="selection-1" name="people">
+								<select class="selection-1" name="media">
 									<option>Seleccione una opción</option>
 									<option>Virtual</option>
 									<option>Presencial</option>
@@ -124,16 +277,20 @@
 							</span>
 
 							<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
-								<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="phone" placeholder="Observación">
+								<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="observation" placeholder="Observación" autocomplete="off">
 							</div>
 						</div>
 
 					</div>
 
-					<div class="wrap-btn-booking flex-c-m m-t-6">
+					<div class="wrap-btn-booking d-flex justify-content-between">
+						<input type="hidden" name="oculto" value="1">
 						<!-- Button3 -->
 						<button type="submit" class="btn3 flex-c-m size13 txt11 trans-0-4">
-							AGENDAR
+							GUARDAR
+						</button>
+						<button type="button" class="btn3 flex-c-m size13 txt11 trans-0-4" data-toggle="modal" data-target="#modalService">
+							ver listado de servicios
 						</button>
 					</div>
 				</form>
@@ -143,6 +300,35 @@
 
 	</div>
 </section>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalService" role="dialog">
+	<div class="modal-dialog">
+		<form class="p-4" method="GET" action="listado_servicios.php">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Introduzca contraseña admin</h4>
+				</div>
+				<div class="modal-body">
+					<div class="col-md-12">
+						<!-- Numero de documento -->
+						<div class="wrap-inputdocument size12 bo2 bo-rad-10 m-t-3 m-b-23">
+							<input class="bo-rad-10 sizefull txt10 p-l-20" type="password" name="password" placeholder="Password" autocomplete="off" required>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn3 flex-c-m size13 txt11 trans-0-4">
+						INGRESAR
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
 
 
 <!-- Footer -->
